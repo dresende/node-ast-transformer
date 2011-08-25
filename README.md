@@ -9,20 +9,17 @@ Imagin you have a file with this code:
 
 And you want to convert `_("...")` to `"..."` similar to what `gettext()` does.
 
-    var js_parser = require("uglify-js").parser,
-        js_compressor = require("uglify-js").uglify,
-        Transformer = require("ast-transformer").Transformer;
+    var transformer = require("ast-transformer");
     
     fs.readFileSync("file.js", function (err, data) {
         if (err) return console.log(err);
 
-        var transformer = new Transformer(js_parser.parse(String(data)));
-        transformer.replaceFunctionCall("_", function (text) {
-            // text = "Hello, world!"
+        var code = new transformer.Transformer(transformer.parse(data));
+        code.replaceFunctionCall("_", function (text) {
             return "Hola, mundo!";
         });
 
         // will output:
         // console.log("Hola, mundo!");
-        console.log(js_compressor.gen_code(transformer.get()));
+        console.log(code.generate());
     });
