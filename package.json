@@ -1,0 +1,30 @@
+{
+	"name"		: "ast-transformer",
+	"description"	: "An UglifyJS AST transformer",
+	"repository"	: {
+		"type"	: "git",
+		"url"	: "git://github.com/dresende/node-ast-transformer.git"
+	},
+	"version"	: "0.0.1",
+	"homepage"	: "http://github.com/dresende/node-ast-transformer",
+	"dependencies"	: {
+		"uglify-js": "1.x.x"
+	},
+	"keywords"	: [
+		"AST",
+		"uglifyjs"
+	],
+	"author"	: {
+		"name"	: "Diogo Resende",
+		"email"	: "dresende@thinkdigital.pt",
+		"url"	: "http://www.thinkdigital.pt"
+	},
+	"engines"	: {
+		"node"	: "0.4.x"
+	},
+	"directories"	: {
+		"lib"	: "./lib",
+		"example": "./examples"
+	},
+	"main"		: "./lib/ast-transformer"
+}
