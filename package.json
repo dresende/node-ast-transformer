@@ -5,7 +5,7 @@
 		"type"	: "git",
 		"url"	: "git://github.com/dresende/node-ast-transformer.git"
 	},
-	"version"	: "0.0.1",
+	"version"	: "0.0.2",
 	"homepage"	: "http://github.com/dresende/node-ast-transformer",
 	"dependencies"	: {
 		"uglify-js": "1.x.x"
