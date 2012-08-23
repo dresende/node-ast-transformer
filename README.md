@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/dresende/node-ast-transformer.png)](http://travis-ci.org/dresende/node-ast-transformer)
 ## UglifyJS AST Transformer
 
 The goal of this NodeJS module is to be able to make transformations on AST (Abstract Syntax Tree)
